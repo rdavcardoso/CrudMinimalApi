@@ -16,7 +16,12 @@ builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<ClienteCreateDtoValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<ClienteUpdateDtoValidator>();
 
+
 var app = builder.Build();
+
+app.MapGet("/", () => "Minimal API CRUD criada por Rogério Cardoso da Vitória" +
+                      "/nFeita para aprendizado de EF Core!");
+
 
 
 
