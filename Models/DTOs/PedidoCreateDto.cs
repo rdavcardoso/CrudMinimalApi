@@ -2,7 +2,6 @@
 
 public class PedidoCreateDto
 {
-    public int IdCliente { get; set; }
-    public DateTime DataPedido { get; set; }
-    public decimal ValorTotal { get; set; }
+    public int ClienteId { get; set; }
+    public List<int> ProdutoIds { get; set; }
 }

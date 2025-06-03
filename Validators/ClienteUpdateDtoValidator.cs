@@ -16,12 +16,6 @@ public class ClienteUpdateDtoValidator : AbstractValidator<ClienteUpdateDto>
         RuleFor(x => x.Email)
             .NotEmpty()
             .EmailAddress();
-        
-        RuleFor(x => x.CPF)
-            .NotEmpty()
-            .WithMessage("CPF é obrigatório")
-            .Length(9)
-            .WithMessage("Apenas números.");
     }
     
 }
