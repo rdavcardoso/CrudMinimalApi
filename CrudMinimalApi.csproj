@@ -19,10 +19,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="EndPoints\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <Compile Remove="Services\**" />
     </ItemGroup>
 
