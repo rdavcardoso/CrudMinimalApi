@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿namespace CrudMinimalApi.EndPoints;
 
-namespace CrudMinimalApi.EndPoints;
+using Microsoft.EntityFrameworkCore;
 using CrudMinimalApi.Models;
 using CrudMinimalApi.Models.DTOs;
 using CrudMinimalApi.Data;

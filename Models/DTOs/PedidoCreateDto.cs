@@ -3,5 +3,6 @@
 public class PedidoCreateDto
 {
     public int ClienteId { get; set; }
-    public List<int> ProdutoIds { get; set; }
+    public DateTime DataPedido { get; set; }
+    public List<int> ProdutosIds { get; set; }
 }

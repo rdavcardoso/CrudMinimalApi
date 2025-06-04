@@ -3,5 +3,5 @@
 public class PedidoUpdateDto
 {
     public DateTime DataPedido { get; set; }
-    public decimal ValorTotal { get; set; }
+    public List<int> ProdutosIds { get; set; }
 }

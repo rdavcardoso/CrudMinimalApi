@@ -1,5 +1,8 @@
 ﻿namespace CrudMinimalApi.EndPoints;
+using CrudMinimalApi.Models;
 using CrudMinimalApi.Models.DTOs;
+using CrudMinimalApi.Data;
+
 
 public static class ProdutoEndpoints
 {
