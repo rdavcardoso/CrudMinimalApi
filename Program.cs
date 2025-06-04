@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddDbContext<AppDbContext>(options =>
     {
-        options.UseNpgsql("DefaultConnection");
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
     } );
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddFluentValidationAutoValidation();
