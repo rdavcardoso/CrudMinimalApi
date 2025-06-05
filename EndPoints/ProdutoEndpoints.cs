@@ -39,7 +39,7 @@ public static class ProdutoEndpoints
             return Results.Created($"/produtos/{produto.Id}", produto);
         });
         
-        app.MapPut("/produtos/{id}", async (int id, ProdutoUpdateDto dto, AppDbContext db) =>
+        app.MapPut("/produtos/{id}", async (int id, ProdutoCreateDto dto, AppDbContext db) =>
         {
             var produto = await db.Produtos.FindAsync(id);
             if (produto == null)

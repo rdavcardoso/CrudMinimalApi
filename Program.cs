@@ -15,7 +15,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<ClienteCreateDtoValidator>();
-builder.Services.AddValidatorsFromAssemblyContaining<ClienteUpdateDtoValidator>();
 
 
 var app = builder.Build();

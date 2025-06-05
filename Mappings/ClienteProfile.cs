@@ -8,10 +8,10 @@ public class ClienteProfile : Profile
 {
     public ClienteProfile()
     {
-        CreateMap<Cliente, ClienteReadDto>();
+        CreateMap<Cliente, ClienteDto>();
         CreateMap<ClienteCreateDto, Cliente>();
-        CreateMap<ClienteUpdateDto, Cliente>();
-        CreateMap<Cliente, ClienteUpdateDto>();
+        CreateMap<ClienteCreateDto, Cliente>();
+        CreateMap<Cliente, ClienteCreateDto>();
     }
     
 }

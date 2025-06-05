@@ -35,7 +35,7 @@ public static class ClienteEndpoints
             return Results.Created($"/clientes/{cliente.Id}", cliente);
         });
         
-        app.MapPut("/clientes/{id}", async (int id, ClienteUpdateDto dto, AppDbContext db) =>
+        app.MapPut("/clientes/{id}", async (int id, ClienteCreateDto dto, AppDbContext db) =>
         {
             var cliente = await db.Clientes.FindAsync(id);
             if (cliente == null)

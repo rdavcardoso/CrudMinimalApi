@@ -9,7 +9,7 @@ public class PedidoProfile : Profile
 {
     public PedidoProfile()
     {
-        CreateMap<Pedido, PedidoReadDto>();
+        CreateMap<Pedido, PedidoDto>();
         CreateMap<PedidoCreateDto, Pedido>();
         CreateMap<PedidoUpdateDto, Pedido>();
         CreateMap<Pedido,  PedidoUpdateDto>();

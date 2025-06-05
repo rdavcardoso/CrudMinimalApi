@@ -1,9 +1,9 @@
 ﻿namespace CrudMinimalApi.Models.DTOs;
 
-public class ClienteReadDto
+public class ClienteDto
 {
     public int Id { get; set; }
     public string Nome { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;
-    public List<PedidoReadDto> Pedidos { get; set; } = new();
+    public List<PedidoResumoDto> Pedidos { get; set; } = new();
 }
