@@ -14,7 +14,8 @@ public class ClienteCreateDtoValidator : AbstractValidator<ClienteCreateDto>
 
         RuleFor(x => x.Email)
             .NotEmpty()
-            .EmailAddress();
+            .EmailAddress()
+            .WithMessage("Por favor, informe um email válido.");
     }
     
 }

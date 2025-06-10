@@ -2,6 +2,6 @@
 
 public class PedidoUpdateDto
 {
-    public DateTime DataPedido { get; set; }
+    public DateTime Data { get; set; }
     public List<int> ProdutosIds { get; set; }
 }
