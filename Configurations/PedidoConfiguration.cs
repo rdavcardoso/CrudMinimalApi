@@ -18,6 +18,12 @@ public class PedidoConfiguration : IEntityTypeConfiguration<Pedido>
         // Propriedade Obrigatória
         builder.Property(p => p.Data).IsRequired();
         
+        // Relacionamento Cliente -> Pedidos (1:N)
+        builder.HasOne(p => p.Cliente)
+            .WithMany(c => c.Pedidos)
+            .HasForeignKey(p => p.ClienteId)
+            .OnDelete(DeleteBehavior.Restrict);
+        
         // Relacionamento: Pedido -> PedidoProduto (1:N)
         builder.HasMany(p => p.Itens)
             .WithOne(pp => pp.Pedido)
