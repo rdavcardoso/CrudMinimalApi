@@ -2,7 +2,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using CrudMinimalApi.Models;
+using Models;
 
 public class ClienteConfiguration : IEntityTypeConfiguration<Cliente>
 {
