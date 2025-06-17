@@ -40,7 +40,7 @@ public static class PedidoEndpoints
             var pedido = new Pedido
             {
                 ClienteId = dto.ClienteId,
-                DataPedido = DateTime.UtcNow,
+                Data = DateTime.UtcNow,
                 Itens = dto.ProdutosIds.Select(produtoId => new PedidoProduto
                 {
                     ProdutoId = produtoId
